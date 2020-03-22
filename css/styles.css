@@ -1,0 +1,246 @@
+html {
+  font-family: "Roboto";
+  background-image: url(../img/fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html body header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: transform 2s;
+  transform: rotateY(360deg);
+  height: 100vh;
+}
+
+html body header h1 {
+  color: #7c4dff;
+}
+
+html body header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+html body header ul i {
+  color: #aeea00;
+  font-size: 30px;
+  padding: 0 1% 0 1%;
+  margin: 0 15px 0 7px;
+}
+
+html body header ul i:active {
+  transform: scale(1.1);
+  transform: perspective(600px) scale3d(2, 2, 2) rotateY(360deg) rotateX(360deg);
+}
+
+html body header ul i:hover {
+  color: #e4ff54;
+}
+
+@media screen and (min-width: 830px) {
+  html body header h1 {
+    font-size: 50px;
+  }
+  html body header ul i {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html body header h1 {
+    font-size: 70px;
+  }
+  html body header ul i {
+    font-size: 50px;
+  }
+}
+
+html body main nav {
+  margin: 2% 4% 2% 4%;
+}
+
+html body main nav ul {
+  list-style: none;
+  background-color: #7c4dff;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+html body main nav ul li {
+  display: flex;
+  text-align: center;
+  padding: 15px 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+html body main nav ul li i {
+  margin-right: 10px;
+}
+
+html body main nav ul li:hover {
+  background-color: #ffffff;
+  color: #7c4dff;
+}
+
+@media screen and (min-width: 830px) {
+  html body main nav ul {
+    display: flex;
+  }
+}
+
+html body main #contenedorarticleyaside {
+  margin: 4% 4% 1% 4%;
+}
+
+html body main section, html body main #contenedoraside {
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+}
+
+html body main section article, html body main section aside, html body main #contenedoraside article, html body main #contenedoraside aside {
+  background-color: white;
+  margin: 2% 4% 2% 4%;
+}
+
+html body main section article h2, html body main section aside h2, html body main #contenedoraside article h2, html body main #contenedoraside aside h2 {
+  margin-left: 4%;
+  color: #b47cff;
+}
+
+html body main section article p, html body main section aside p, html body main #contenedoraside article p, html body main #contenedoraside aside p {
+  margin: 4%;
+  text-align: justify;
+  line-height: 25px;
+}
+
+html body main section article h3, html body main section aside h3, html body main #contenedoraside article h3, html body main #contenedoraside aside h3 {
+  display: none;
+  color: #b47cff;
+  margin-left: 4%;
+}
+
+@media screen and (min-width: 830px) {
+  html body main section article h3, html body main section aside h3, html body main #contenedoraside article h3, html body main #contenedoraside aside h3 {
+    font-size: 10px;
+  }
+}
+
+html body main section article, html body main #contenedoraside article {
+  transition: all 1s;
+}
+
+html body main section aside, html body main #contenedoraside aside {
+  transition: all 3s;
+}
+
+html body main section aside h2, html body main #contenedoraside aside h2 {
+  color: #e4ff54;
+}
+
+html body main section article:hover, html body main #contenedoraside article:hover {
+  transform: perspective(2000px) rotateY(15deg);
+}
+
+html body main section aside:hover, html body main #contenedoraside aside:hover {
+  transform: skewY(5deg);
+  box-shadow: -2px 3px 7px 0px #e4ff54;
+}
+
+html body main section aside:hover p, html body main #contenedoraside aside:hover p {
+  color: #e4ff54;
+}
+
+html body footer {
+  background-color: white;
+  margin: 4%;
+  padding: 3%;
+}
+
+html body footer a {
+  text-decoration: none;
+}
+
+html body footer a:hover {
+  background-color: #7c4dff;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 830px) and (max-width: 1199px) {
+  html body #contenedorsectionyaside {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  html body #contenedorsectionyaside section {
+    width: 94%;
+    margin: 0 auto;
+  }
+  html body #contenedorsectionyaside section article {
+    margin: 1%;
+    width: 48%;
+    box-sizing: border-box;
+  }
+  html body #contenedorsectionyaside section article h3 {
+    display: block;
+  }
+  html body #contenedorsectionyaside #contenedoraside aside {
+    width: 100%;
+  }
+  html body #contenedorsectionyaside #contenedoraside #bottomaside {
+    display: none;
+  }
+  html body footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html body #contenedorsectionyaside {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3%;
+  }
+  html body #contenedorsectionyaside section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+  }
+  html body #contenedorsectionyaside section article {
+    width: 31.33%;
+    margin: 1%;
+    transition: transform 1s;
+    transform-origin: 0 0;
+  }
+  html body #contenedorsectionyaside section article h3 {
+    display: block;
+  }
+  html body #contenedorsectionyaside section article:hover {
+    transform: rotate(45deg);
+    transition: transform 1s;
+  }
+  html body #contenedorsectionyaside section article:hover h2 {
+    transition: transform 1s;
+    transform: rotate(360deg);
+    transition-delay: 1s;
+  }
+  html body #contenedorsectionyaside #contenedoraside {
+    width: 25%;
+  }
+  html body #contenedorsectionyaside #contenedoraside aside {
+    width: 100%;
+    margin: 4%;
+  }
+  html body footer {
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
